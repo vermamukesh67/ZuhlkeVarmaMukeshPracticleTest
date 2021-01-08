@@ -18,8 +18,8 @@ class ImageRequest {
 
 extension ImageRequest: NetworkRequest {
     
-    func load(onSuccess: @escaping (UIImage?) -> Void, onError: @escaping (Error?) -> Void) {
-        load(url, withCompletion: onSuccess)
+    func load(onSuccess: @escaping (UIImage?) -> Void, onError: @escaping (Error?) -> Void?) {
+        load(url, onSuccess: onSuccess, onError: onError)
     }
     
 

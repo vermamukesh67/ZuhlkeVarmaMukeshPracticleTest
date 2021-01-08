@@ -11,19 +11,19 @@ import Foundation
 protocol NetworkRequest: AnyObject {
     associatedtype ModelType
     func decode(_ data: Data) throws -> ModelType?
-    func load(onSuccess: @escaping (ModelType?) -> Void, onError: @escaping (Error?) -> Void)
+    func load(onSuccess: @escaping (ModelType?) -> Void, onError: @escaping (Error?) -> Void?)
 }
 
 extension NetworkRequest {
-    func load(_ url: URL, withCompletion completion: @escaping (ModelType?) -> Void) {
+    func load(_ url: URL, onSuccess: @escaping (ModelType?) -> Void, onError: @escaping (Error?) -> Void?) {
         let session = URLSession.init(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: { [weak self] (data: Data?, response: URLResponse?, error: Error?) -> Void in
             guard let data = data else {
-                completion(nil)
+                onError(error)
                 return
             }
             do {
-                try completion(self?.decode(data))
+                try onSuccess(self?.decode(data))
             } catch let parsingError {
                 print("Error", parsingError)
             }
@@ -41,8 +41,8 @@ class APIRequest<Resource: APIResource> {
 }
 
 extension APIRequest: NetworkRequest {
-    func load(onSuccess: @escaping (Resource.ModelType?) -> Void, onError: @escaping (Error?) -> Void) {
-        load(resource.url, withCompletion: onSuccess)
+    func load(onSuccess: @escaping (Resource.ModelType?) -> Void, onError: @escaping (Error?) -> Void?) {
+        load(resource.url, onSuccess: onSuccess, onError: onError)
     }
     
     func decode(_ data: Data) -> Resource.ModelType? {

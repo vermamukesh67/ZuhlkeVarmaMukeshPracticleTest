@@ -71,6 +71,7 @@ class TrafficImagePreviewController: UIViewController {
     private func handleNoData(_ errorMessage: String) {
         DispatchQueue.main.async { [weak self] in
             self?.actIndicatorView.stopAnimating()
+            self?.dismiss(animated: true)
             self?.showAlert(title: "", message: errorMessage)
         }
     }
