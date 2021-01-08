@@ -50,13 +50,14 @@ extension APIRequest: NetworkRequest {
 protocol APIResource {
     associatedtype ModelType: Decodable
     var methodPath: String { get }
+    var queryItems: [URLQueryItem] { get }
 }
 
 extension APIResource {
     var url: URL {
         var components = URLComponents(string: "https://api.data.gov.sg")!
         components.path = methodPath
-        components.queryItems = components.queryItems
+        components.queryItems = queryItems
         return components.url!
     }
 }
