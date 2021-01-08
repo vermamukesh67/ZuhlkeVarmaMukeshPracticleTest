@@ -39,6 +39,9 @@ class TrafficImageMapViewController: UIViewController {
             self?.openImagePreviewScreen(cameraData)
         }
     }
+}
+
+extension TrafficImageMapViewController {
     
     /// Update the ui when traffic images fetched successfully.
     private func updateDataSource() {
@@ -68,5 +71,6 @@ class TrafficImageMapViewController: UIViewController {
         let imagePreviewScreen = TrafficImagePreviewController.init(imageUrl: strImageUrl)
         imagePreviewScreen.show(in: self)
     }
+    
 }
 

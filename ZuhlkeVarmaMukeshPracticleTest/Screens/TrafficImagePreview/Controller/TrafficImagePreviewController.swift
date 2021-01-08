@@ -30,6 +30,7 @@ class TrafficImagePreviewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    /// Prepare the view model object.
     private func setupViewModelForUIUpdate() {
         self.actIndicatorView.startAnimating()
         self.viewModel = TrafficImagePreviewViewModel.init(strImageUrl: self.imageString)
@@ -56,6 +57,9 @@ class TrafficImagePreviewController: UIViewController {
         self.modalPresentationStyle = .overCurrentContext
         viewController.present(self, animated: true)
     }
+}
+
+extension TrafficImagePreviewController {
     
     /// Show image.
     /// - Parameter image: A UIImage object.

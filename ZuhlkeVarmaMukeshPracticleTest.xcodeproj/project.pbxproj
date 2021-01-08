@@ -202,10 +202,10 @@
 		C06C239F25A822FC00459E20 /* TrafficImageMap */ = {
 			isa = PBXGroup;
 			children = (
+				C06C23A025A8231300459E20 /* Controller */,
 				C06C23A325A8237A00459E20 /* ViewModel */,
 				C06C23A225A8232A00459E20 /* Model */,
 				C06C23A125A8232200459E20 /* Views */,
-				C06C23A025A8231300459E20 /* Controller */,
 			);
 			path = TrafficImageMap;
 			sourceTree = "<group>";
