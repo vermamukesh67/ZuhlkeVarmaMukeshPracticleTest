@@ -11,5 +11,5 @@ import Foundation
 public struct TrafficImageDataResource: APIResource {
     typealias ModelType = TrafficImageData
     let methodPath = "/v1/transport/traffic-images"
-    let queryItems: [URLQueryItem] = []
+    var queryItems: [URLQueryItem]? = nil
 }

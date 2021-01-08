@@ -10,7 +10,7 @@ import Foundation
 // A View model class that handles the traffic images api calls and its business logic.
 class TrafficImageMapViewModel {
     
-    private var apiService = APIRequest(resource: TrafficImageDataResource())
+    var apiService = APIRequest(resource: TrafficImageDataResource())
     
     var bindControllerForSuccess : (() -> Void)?
     var bindControllerForError : ((_ errorMessage: String) -> Void)?

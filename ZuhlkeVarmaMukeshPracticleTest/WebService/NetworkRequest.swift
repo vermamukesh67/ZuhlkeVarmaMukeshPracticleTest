@@ -54,7 +54,7 @@ extension APIRequest: NetworkRequest {
 protocol APIResource {
     associatedtype ModelType: Decodable
     var methodPath: String { get }
-    var queryItems: [URLQueryItem] { get }
+    var queryItems: [URLQueryItem]? { get }
 }
 
 extension APIResource {

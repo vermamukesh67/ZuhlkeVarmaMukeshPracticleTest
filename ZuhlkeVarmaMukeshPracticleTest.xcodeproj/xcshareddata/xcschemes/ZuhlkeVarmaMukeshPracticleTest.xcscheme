@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1230"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C00D5E0525A80002004FC60E"
+               BuildableName = "ZuhlkeVarmaMukeshPracticleTest.app"
+               BlueprintName = "ZuhlkeVarmaMukeshPracticleTest"
+               ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C00D5E0525A80002004FC60E"
+            BuildableName = "ZuhlkeVarmaMukeshPracticleTest.app"
+            BlueprintName = "ZuhlkeVarmaMukeshPracticleTest"
+            ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C00D5E1B25A80004004FC60E"
+               BuildableName = "ZuhlkeVarmaMukeshPracticleTestTests.xctest"
+               BlueprintName = "ZuhlkeVarmaMukeshPracticleTestTests"
+               ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C00D5E2625A80004004FC60E"
+               BuildableName = "ZuhlkeVarmaMukeshPracticleTestUITests.xctest"
+               BlueprintName = "ZuhlkeVarmaMukeshPracticleTestUITests"
+               ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C00D5E0525A80002004FC60E"
+            BuildableName = "ZuhlkeVarmaMukeshPracticleTest.app"
+            BlueprintName = "ZuhlkeVarmaMukeshPracticleTest"
+            ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C00D5E0525A80002004FC60E"
+            BuildableName = "ZuhlkeVarmaMukeshPracticleTest.app"
+            BlueprintName = "ZuhlkeVarmaMukeshPracticleTest"
+            ReferencedContainer = "container:ZuhlkeVarmaMukeshPracticleTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

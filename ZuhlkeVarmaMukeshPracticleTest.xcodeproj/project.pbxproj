@@ -13,7 +13,6 @@
 		C00D5E1125A80002004FC60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00D5E0F25A80002004FC60E /* Main.storyboard */; };
 		C00D5E1325A80004004FC60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00D5E1225A80004004FC60E /* Assets.xcassets */; };
 		C00D5E1625A80004004FC60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00D5E1425A80004004FC60E /* LaunchScreen.storyboard */; };
-		C00D5E2125A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D5E2025A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.swift */; };
 		C00D5E2C25A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D5E2B25A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestUITests.swift */; };
 		C06C236E25A803D700459E20 /* TrafficImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C236D25A803D700459E20 /* TrafficImageMapView.swift */; };
 		C06C238125A810DA00459E20 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C238025A810DA00459E20 /* Location.swift */; };
@@ -32,6 +31,11 @@
 		C091301625A86F0F003DA717 /* TrafficImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091301425A86F0F003DA717 /* TrafficImagePreviewController.swift */; };
 		C091301725A86F0F003DA717 /* TrafficImagePreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C091301525A86F0F003DA717 /* TrafficImagePreviewController.xib */; };
 		C091301F25A8829F003DA717 /* TrafficImagePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091301E25A8829F003DA717 /* TrafficImagePreviewViewModel.swift */; };
+		C091304925A8B1FA003DA717 /* TrafficImageDataResourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091304825A8B1FA003DA717 /* TrafficImageDataResourceTest.swift */; };
+		C091305725A8B700003DA717 /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091305625A8B700003DA717 /* APIRequestTest.swift */; };
+		C091306D25A8C21F003DA717 /* mockdata.json in Resources */ = {isa = PBXBuildFile; fileRef = C091306C25A8C21F003DA717 /* mockdata.json */; };
+		C091307225A8C497003DA717 /* TrafficImageMapViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091307125A8C497003DA717 /* TrafficImageMapViewModelTest.swift */; };
+		C091307A25A8D240003DA717 /* ImageCacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091307925A8D240003DA717 /* ImageCacheTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +65,6 @@
 		C00D5E1525A80004004FC60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C00D5E1725A80004004FC60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C00D5E1C25A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuhlkeVarmaMukeshPracticleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C00D5E2025A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuhlkeVarmaMukeshPracticleTestTests.swift; sourceTree = "<group>"; };
 		C00D5E2225A80004004FC60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C00D5E2725A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuhlkeVarmaMukeshPracticleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00D5E2B25A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuhlkeVarmaMukeshPracticleTestUITests.swift; sourceTree = "<group>"; };
@@ -83,6 +86,11 @@
 		C091301425A86F0F003DA717 /* TrafficImagePreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficImagePreviewController.swift; sourceTree = "<group>"; };
 		C091301525A86F0F003DA717 /* TrafficImagePreviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficImagePreviewController.xib; sourceTree = "<group>"; };
 		C091301E25A8829F003DA717 /* TrafficImagePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficImagePreviewViewModel.swift; sourceTree = "<group>"; };
+		C091304825A8B1FA003DA717 /* TrafficImageDataResourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficImageDataResourceTest.swift; sourceTree = "<group>"; };
+		C091305625A8B700003DA717 /* APIRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
+		C091306C25A8C21F003DA717 /* mockdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockdata.json; sourceTree = "<group>"; };
+		C091307125A8C497003DA717 /* TrafficImageMapViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficImageMapViewModelTest.swift; sourceTree = "<group>"; };
+		C091307925A8D240003DA717 /* ImageCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +146,7 @@
 				C06C237A25A8109500459E20 /* WebService */,
 				C06C236125A800CA00459E20 /* Helpers */,
 				C0912FF125A85603003DA717 /* Common */,
-				C00D5E1225A80004004FC60E /* Assets.xcassets */,
+				C091303C25A8AEE4003DA717 /* Assets */,
 				C00D5E1725A80004004FC60E /* Info.plist */,
 			);
 			path = ZuhlkeVarmaMukeshPracticleTest;
@@ -147,7 +155,11 @@
 		C00D5E1F25A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				C00D5E2025A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.swift */,
+				C091306C25A8C21F003DA717 /* mockdata.json */,
+				C091305625A8B700003DA717 /* APIRequestTest.swift */,
+				C091307125A8C497003DA717 /* TrafficImageMapViewModelTest.swift */,
+				C091304825A8B1FA003DA717 /* TrafficImageDataResourceTest.swift */,
+				C091307925A8D240003DA717 /* ImageCacheTest.swift */,
 				C00D5E2225A80004004FC60E /* Info.plist */,
 			);
 			path = ZuhlkeVarmaMukeshPracticleTestTests;
@@ -283,6 +295,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C091303C25A8AEE4003DA717 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C00D5E1225A80004004FC60E /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C091306D25A8C21F003DA717 /* mockdata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +461,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00D5E2125A80004004FC60E /* ZuhlkeVarmaMukeshPracticleTestTests.swift in Sources */,
+				C091305725A8B700003DA717 /* APIRequestTest.swift in Sources */,
+				C091304925A8B1FA003DA717 /* TrafficImageDataResourceTest.swift in Sources */,
+				C091307A25A8D240003DA717 /* ImageCacheTest.swift in Sources */,
+				C091307225A8C497003DA717 /* TrafficImageMapViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
