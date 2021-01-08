@@ -21,7 +21,7 @@ class APIRequestTest: XCTestCase {
     func testApiSuccessscenario() throws {
         apiRequest.load { data in
             XCTAssertNotNil(data, "data should not be nil")
-            XCTAssertNotNil(data?.api_info, "api_info should not be nil")
+            XCTAssertNotNil(data?.apiInfo, "api_info should not be nil")
             XCTAssertNotNil(data?.items, "items should not be nil")
             XCTAssertEqual(data?.items?.first?.cameras?.count, 87, "Wrong count of camera data is there")
             XCTAssertEqual(data?.items?.first?.cameras?.first?.camera_id, "1001", "camera id should be equal to 1001")

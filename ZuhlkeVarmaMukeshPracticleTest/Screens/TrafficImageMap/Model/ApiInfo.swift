@@ -1,5 +1,5 @@
 //
-//  Api_info.swift
+//  ApiInfo.swift
 //  ZuhlkeVarmaMukeshPracticleTest
 //
 //  Created by verma mukesh on 8/1/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Api_info : Codable {
+struct ApiInfo : Codable {
 	let status : String?
 
 	enum CodingKeys: String, CodingKey {

@@ -1,5 +1,5 @@
 //
-//  Image_metadata.swift
+//  ImageMetadata.swift
 //  ZuhlkeVarmaMukeshPracticleTest
 //
 //  Created by verma mukesh on 8/1/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Image_metadata : Codable {
+struct ImageMetadata : Codable {
 	let height : Int?
 	let width : Int?
 	let md5 : String?

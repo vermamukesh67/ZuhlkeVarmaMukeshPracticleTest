@@ -12,7 +12,7 @@ struct Cameras : Codable {
 	let image : String?
 	let location : Location?
 	let camera_id : String?
-	let image_metadata : Image_metadata?
+	let image_metadata : ImageMetadata?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -29,7 +29,7 @@ struct Cameras : Codable {
 		image = try values.decodeIfPresent(String.self, forKey: .image)
 		location = try values.decodeIfPresent(Location.self, forKey: .location)
 		camera_id = try values.decodeIfPresent(String.self, forKey: .camera_id)
-		image_metadata = try values.decodeIfPresent(Image_metadata.self, forKey: .image_metadata)
+		image_metadata = try values.decodeIfPresent(ImageMetadata.self, forKey: .image_metadata)
 	}
 
 }
