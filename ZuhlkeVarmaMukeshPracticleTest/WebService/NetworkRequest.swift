@@ -10,8 +10,8 @@ import Foundation
 /// A Network protocol used for api call in APIRequest class.
 protocol NetworkRequest: AnyObject {
     associatedtype ModelType
-    func decode(_ data: Data) -> ModelType?
-    func load(withCompletion completion: @escaping (ModelType?) -> Void)
+    func decode(_ data: Data) throws -> ModelType?
+    func load(onSuccess: @escaping (ModelType?) -> Void, onError: @escaping (Error?) -> Void)
 }
 
 extension NetworkRequest {
@@ -22,7 +22,11 @@ extension NetworkRequest {
                 completion(nil)
                 return
             }
-            completion(self?.decode(data))
+            do {
+                try completion(self?.decode(data))
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
         })
         task.resume()
     }
@@ -37,13 +41,13 @@ class APIRequest<Resource: APIResource> {
 }
 
 extension APIRequest: NetworkRequest {
+    func load(onSuccess: @escaping (Resource.ModelType?) -> Void, onError: @escaping (Error?) -> Void) {
+        load(resource.url, withCompletion: onSuccess)
+    }
+    
     func decode(_ data: Data) -> Resource.ModelType? {
         let wrapper = try? JSONDecoder().decode(Resource.ModelType.self, from: data)
         return wrapper
-    }
-    
-    func load(withCompletion completion: @escaping (Resource.ModelType?) -> Void) {
-        load(resource.url, withCompletion: completion)
     }
 }
 

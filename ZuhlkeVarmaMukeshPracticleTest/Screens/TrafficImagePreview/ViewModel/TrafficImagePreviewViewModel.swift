@@ -31,7 +31,7 @@ class TrafficImagePreviewViewModel {
         if let trafficImage = ImageCache.shared.image(for: imageRequest.url) {
             self.bindControllerForSuccess?(trafficImage)
         } else {
-            imageRequest.load(withCompletion: {[weak self] (image: UIImage?) in
+            imageRequest.load(onSuccess: {[weak self] (image: UIImage?) in
                 DispatchQueue.main.async {
                     guard let trafficImage = image else {
                         self?.bindControllerForError?("image data not found")
@@ -39,6 +39,8 @@ class TrafficImagePreviewViewModel {
                     }
                     self?.bindControllerForSuccess?(trafficImage)
                 }
+            }, onError: { error in
+                self.bindControllerForError?(error?.localizedDescription ?? "image data not found")
             })
         }
     }

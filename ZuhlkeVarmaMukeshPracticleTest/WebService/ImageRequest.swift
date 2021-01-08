@@ -17,14 +17,15 @@ class ImageRequest {
 }
 
 extension ImageRequest: NetworkRequest {
+    
+    func load(onSuccess: @escaping (UIImage?) -> Void, onError: @escaping (Error?) -> Void) {
+        load(url, withCompletion: onSuccess)
+    }
+    
 
     func decode(_ data: Data) -> UIImage? {
         let image = UIImage(data: data)
         ImageCache.shared.insertImage(image, for: url)
         return image
-    }
-    
-    func load(withCompletion completion: @escaping (UIImage?) -> Void) {
-        load(url, withCompletion: completion)
     }
 }

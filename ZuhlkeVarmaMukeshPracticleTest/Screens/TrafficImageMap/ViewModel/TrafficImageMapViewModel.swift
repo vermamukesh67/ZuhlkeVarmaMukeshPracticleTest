@@ -31,6 +31,8 @@ class TrafficImageMapViewModel {
     func getTrafficImageData() {
         apiService.load { [weak self] (trafficData) in
             self?.trafficImageData = trafficData
+        } onError: { error in
+            self.bindControllerForError?(error?.localizedDescription ?? "traffic images data not found")
         }
     }
 }
